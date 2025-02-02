@@ -15,3 +15,4 @@ wandb/
 
 # Excluir todo el contenido de data
 data/*
+!data/.gitkeep
