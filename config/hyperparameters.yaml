@@ -1,0 +1,46 @@
+# Hiperparámetros de la arquitectura de las capas
+features:
+  in_channels1: 3
+  out_channels1: 96
+  kernel_size1: 3
+  stride1: 1
+  padding1: 1
+  kernel_size_pool1: 2
+  stride_pool1: 2
+  in_channels2: 96
+  out_channels2: 256
+  kernel_size2: 3
+  stride2: 1
+  padding2: 1
+  kernel_size_pool2: 2
+  stride_pool2: 2
+  in_channels3: 256
+  out_channels3: 384
+  kernel_size3: 3
+  stride3: 1
+  padding3: 1
+  in_channels4: 384
+  out_channels4: 384
+  kernel_size4: 3
+  stride4: 1
+  padding4: 1
+  in_channels5: 384
+  out_channels5: 256
+  kernel_size5: 3
+  stride5: 1
+  padding5: 1
+  kernel_size_pool3: 2
+  stride_pool3: 2
+
+classifier:
+  linear_input: 4096   # 4 * 4 * 256
+  linear_hidden1: 1024
+  linear_hidden2: 512
+  num_classes: 100
+# Rutas para los modelos y checkpoints
+paths:
+  # dataset_root: "./data"
+  checkpoint_dir: "./checkpoints"
+  best_model_dir: "./best_model"
+# Intervalo para guardar los checkpoints
+checkpoint_interval: 5  # Guardar un checkpoint cada 5 épocas

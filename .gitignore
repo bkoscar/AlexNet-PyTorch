@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Directorios a excluir
+best_model/
+checkpoints/
+wandb/
+
+# Excluir todo el contenido de data
+data/*
